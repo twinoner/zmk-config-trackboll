@@ -216,7 +216,7 @@
             compatible = "zmk,keymap";
             default_layer {
                     bindings = <
-&kp TAB    &pim447_scroll_move         &kp W          &kp E      &kp R            &pim447_scroll_move     /*|*/ &kp Y     &kp U        &kp I     &kp O          &kp P    &kp BSPC
+&kp TAB    &pim447_scroll_move         &kp W          &kp E      &kp R            &pim447_scroll_move     /*|*/ &pim447_scroll_move     &kp U        &kp I     &kp O          &kp P    &kp BSPC
 &mo MOUSE  &kp A         &lh_pht LSFT S &lt SYMB D &lt NAV F        &kp G     /*|*/ &kp H     &kp J        &kp K     &rh_pht LSFT L &kp SEMI &kp SQT
 &kp LSHFT  &mltp MEDIA Z &kp X          &kp C      &kp V            &kp B     /*|*/ &kp N     &kp M        &kp COMMA &kp DOT        &kp FSLH &kp RET
                                         &kp LGUI   &mt LALT K_CMENU &kp LCTRL /*|*/ &kp SPACE &lt_cw NAV 0 &mo FN
