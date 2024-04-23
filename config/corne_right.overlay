@@ -7,7 +7,7 @@
 		label = "PIM447_TRACKBALL";
 		swap-axes;
 		invert-move-x;
-		power-layer = <0 1>; /* MOUSE layer */
+		power-layer = <0>; /* MOUSE layer */
 		//idle-timeout = <10>; /* in seconds */
 
 		/* Modified from,
