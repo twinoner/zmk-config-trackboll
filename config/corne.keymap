@@ -13,10 +13,6 @@
 #include <dt-bindings/zmk/ext_power.h>
 
 // TODO: try to move these to a zmk-config corne.dtsi so that I can use these in layer definition for PIM447
-#define DEFAULT 0
-#define LOWER 1
-#define RAISE 2
-#define CTRL 3
 
 / {
     macros {
