@@ -44,7 +44,7 @@
         lower_layer {
 
             bindings = <
-&kp TAB    &kp N1  &kp N2  &kp N3     &kp N4          &kp N5               &kp N6          &kp N7          &kp N8     &kp N9          &kp N0          &kp BSPC
+&kp TAB    &kp N1  &kp N2  &kp N3     &kp N4          &kp N5               &kp N6          &kp N7          &kp N8     &kp N9          &kp N0    &kp BSPC
 &kp LSHFT  &trans  &trans  &trans     &trans          &trans               &trans          &kp UP_ARROW    &trans     &trans          &trans    &trans
 &kp LCTRL  &trans  &trans  &mkp RCLK  &mkp LCLK       &pim447_scroll_move  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT  &trans          &trans    &trans
                            &kp LGUI   &trans          &kp SPACE            &kp RET         &trans          &kp RALT
@@ -64,9 +64,9 @@
         layer_3 {
 
             bindings = <
-&bt BT_CLR  &bt BT_SEL 0    &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &trans  &trans  &trans  &trans  &rgb_ug RGB_ON   &rgb_ug RGB_TOG
-&caps_word  &main_password  &trans        &trans        &trans        &trans          &ext_power EP_ON  &ext_power EP_OFF  &trans  &trans  &rgb_ug RGB_OFF  &rgb_ug RGB_BRI
-&trans      &trans          &trans        &trans        &trans        &trans          &trans  &trans  &trans  &trans  &rgb_ug RGB_TOG  &rgb_ug RGB_BRD
+&bt BT_CLR  &bt BT_SEL 0    &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &trans  &trans  &trans  &trans  &trans   &trans
+&caps_word  &main_password  &trans        &trans        &trans        &trans          &ext_power EP_ON  &ext_power EP_OFF  &trans  &trans  &trans  &trans
+&trans      &trans          &trans        &trans        &trans        &trans          &trans  &trans  &trans  &trans  &trans  &trans
                                           &trans        &trans        &trans          &trans  &trans  &trans
             >;
         };
