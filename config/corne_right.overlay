@@ -1,6 +1,11 @@
 #include <dt-bindings/zmk/trackball_pim447.h>
 
+sda-pin = <17>; // i.e. P0.17 (as in 0*32 + 17) which is GPIO 2 in SparkFun Pro Micro numbering
+scl-pin = <20>; // i.e. P0.20 (as in 0*32 + 20) which is GPIO 3 in SparkFun Pro Micro numbering
+
 &pro_micro_i2c {
+  status = "okay";
+
 	pim447_trackball@a {
 		compatible = "pimoroni,trackball_pim447";
 		reg = <0xa>;
