@@ -5,16 +5,15 @@
  * SPDX-License-Identifier: MIT
  */
 
-
 #include <behaviors.dtsi>
+#include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/ext_power.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/mouse.h>
-#include <dt-bindings/zmk/bt.h>
-#include <dt-bindings/zmk/outputs.h>
-#include <dt-bindings/zmk/ext_power.h>
 #include <dt-bindings/zmk/rgb.h>
 
 // TODO: try to move these to a zmk-config corne.dtsi so that I can use these in layer definition for PIM447
+
 #define DEFAULT 0
 #define GAME 1
 #define NAV 2
@@ -34,7 +33,6 @@
         compatible = "zmk,keymap";
 
         default_layer {
-
             bindings = <
 &kp TAB    &kp Q  &kp W  &kp E     &kp R  &kp T        &kp Y    &kp U  &kp I      &kp O    &kp P     &kp BSPC
 &kp LSHFT  &kp A  &kp S  &kp D     &kp F  &kp G        &kp H    &kp J  &kp K      &kp L    &kp SEMI  &kp SQT
@@ -44,17 +42,15 @@
         };
 
         lower_layer {
-
             bindings = <
-&kp TAB    &kp N1  &kp N2  &kp N3     &kp N4          &kp N5               &kp N6          &kp N7          &kp N8     &kp N9          &kp N0    &kp BSPC
-&kp LSHFT  &trans  &trans  &trans     &trans          &trans               &trans          &kp UP_ARROW    &trans     &trans          &trans    &trans
-&kp LCTRL  &trans  &trans  &mkp RCLK  &mkp LCLK       &pim447_scroll_move  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT  &trans          &trans    &trans
-                           &kp LGUI   &trans          &kp SPACE            &kp RET         &trans          &kp RALT
+&kp TAB    &kp N1  &kp N2  &kp N3     &kp N4     &kp N5                 &kp N6          &kp N7          &kp N8     &kp N9  &kp N0  &kp BSPC
+&kp LSHFT  &trans  &trans  &trans     &trans     &trans                 &trans          &kp UP_ARROW    &trans     &trans  &trans  &trans
+&kp LCTRL  &trans  &trans  &mkp RCLK  &mkp LCLK  &pim447_scroll_move    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT  &trans  &trans  &trans
+                           &kp LGUI   &trans     &kp SPACE              &kp RET         &trans          &kp RALT
             >;
         };
 
         raise_layer {
-
             bindings = <
 &kp TAB    &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS   &kp KP_MULTIPLY  &kp LPAR  &kp RPAR  &kp BSPC
 &kp LSHFT  &trans    &trans  &trans    &trans    &trans       &kp MINUS  &kp EQUAL  &kp LBKT         &kp RBKT  &kp BSLH  &kp GRAVE
@@ -64,12 +60,11 @@
         };
 
         layer_3 {
-
             bindings = <
-&bt BT_CLR  &bt BT_SEL 0    &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &trans  &trans  &trans  &trans  &trans   &trans
+&bt BT_CLR  &bt BT_SEL 0    &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &trans            &trans             &trans  &trans  &trans  &trans
 &caps_word  &main_password  &trans        &trans        &trans        &trans          &ext_power EP_ON  &ext_power EP_OFF  &trans  &trans  &trans  &trans
-&trans      &trans          &trans        &trans        &trans        &trans          &trans  &trans  &trans  &trans  &trans  &trans
-                                          &trans        &trans        &trans          &trans  &trans  &trans
+&trans      &trans          &trans        &trans        &trans        &trans          &rgb_ug RGB_TOG   &trans             &trans  &trans  &trans  &trans
+                                          &trans        &trans        &trans          &trans            &trans             &trans
             >;
         };
     };
