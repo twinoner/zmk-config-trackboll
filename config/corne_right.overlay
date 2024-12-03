@@ -1,4 +1,3 @@
-#include "corne.dtsi"
 #include <dt-bindings/zmk/trackball_pim447.h>
 
 &pro_micro_i2c {
