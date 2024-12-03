@@ -13,6 +13,10 @@
 #include <dt-bindings/led/led.h>
 
 // TODO: try to move these to a zmk-config corne.dtsi so that I can use these in layer definition for PIM447
+#define DEFAULT 0
+#define GAME 1
+#define NAV 2
+#define SYMB 3
 
     keymap {
         compatible = "zmk,keymap";
