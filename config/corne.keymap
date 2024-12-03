@@ -52,10 +52,10 @@
 
         raise_layer {
             bindings = <
-&kp TAB    &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS   &kp KP_MULTIPLY  &kp LPAR  &kp RPAR  &kp BSPC
-&kp LSHFT  &trans    &trans  &trans    &trans    &trans       &kp MINUS  &kp EQUAL  &kp LBKT         &kp RBKT  &kp BSLH  &kp GRAVE
-&kp LCTRL  &trans    &trans  &trans    &trans    &trans       &kp UNDER  &kp PLUS   &kp LBRC         &kp RBRC  &kp PIPE  &kp TILDE
-                             &kp LGUI  &trans    &kp SPACE    &kp RET    &trans     &kp RALT
+&kp K_PP           &kp UP      &kp C_STOP       &kp PRINTSCREEN  &kp SCROLLLOCK  &kp PAUSE_BREAK    &bt BT_CLR        &bt BT_SEL 0       &bt BT_SEL 1       &bt BT_SEL 2     &bt BT_SEL 3                      &bt BT_SEL 4
+&kp LEFT           &kp DOWN    &kp RIGHT        &kp INS          &kp HOME        &kp PG_UP          &ext_power EP_ON  &ext_power EP_OFF  &ext_power EP_TOG  &rgb_ug RGB_HUI  &rgb_ug RGB_COLOR_HSB(66,91,51)   &rgb_ug RGB_COLOR_HSB(99,91,50)
+&kp C_VOLUME_DOWN  &kp K_MUTE  &kp C_VOLUME_UP  &kp DEL          &kp END         &kp PG_DN          &rgb_ug RGB_TOG   &rgb_ug RGB_EFF    &rgb_ug RGB_SPI    &rgb_ug RGB_SPD  &rgb_ug RGB_COLOR_HSB(240,88,49)  &rgb_ug RGB_COLOR_HSB(0,87,50)
+                                                &kp C_PREVIOUS   &trans          &kp C_NEXT         &kp RET           &trans             &kp RALT
             >;
         };
 
