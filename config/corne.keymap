@@ -4,15 +4,16 @@
  * SPDX-License-Identifier: MIT
  */
 
+#include <dt-bindings/led/led.h>
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/ext_power.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/mouse.h>
 #include <dt-bindings/zmk/rgb.h>
-#include <dt-bindings/led/led.h>
 
 // TODO: try to move these to a zmk-config corne.dtsi so that I can use these in layer definition for PIM447
+
 #define DEFAULT 0
 #define GAME 1
 #define NAV 2
@@ -42,10 +43,10 @@
 
         lower_layer {
             bindings = <
-&kp TAB    &kp F1   &kp F2   &kp F3     &kp F4     &kp F5                 &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp SLASH     &kp ASTERISK  &kp BSPC
-&kp LSHFT  &kp F6   &kp F7   &kp F8     &kp F9     &kp F10                &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp NUMBER_9  &kp MINUS     &kp PLUS
-&kp LCTRL  &kp F11  &kp F12  &mkp RCLK  &mkp LCLK  &pim447_scroll_move    &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp DOT       &kp EQUAL     &kp ENTER
-                             &kp LGUI   &trans     &kp SPACE              &kp NUMBER_0  &trans        &kp RCTRL
+&kp TAB    &kp F1   &kp F2   &kp F3        &kp F4            &kp F5               &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp SLASH     &kp ASTERISK  &kp BSPC
+&kp LSHFT  &kp F6   &kp F7   &kp F8        &kp F9            &kp F10              &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp NUMBER_9  &kp MINUS     &kp PLUS
+&kp LCTRL  &kp F11  &kp F12  &kp GRAVE     &kp LEFT_BRACKET  &kp RIGHT_BRACKET    &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp DOT       &kp EQUAL     &kp ENTER
+                             &kp LEFT_ALT  &trans            &kp BSLH             &kp NUMBER_0  &trans        &kp RCTRL
             >;
         };
 
@@ -60,10 +61,10 @@
 
         layer_3 {
             bindings = <
-&bt BT_CLR  &bt BT_SEL 0    &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4          &trans            &trans             &trans                          &trans  &trans  &trans
-&caps_word  &trans          &trans        &trans        &trans        &trans                &ext_power EP_ON  &ext_power EP_OFF  &trans                          &trans  &trans  &trans
-&trans      &trans          &trans        &trans        &trans        &pim447_scroll_move   &rgb_ug RGB_TOG   &rgb_ug RGB_EFF    &rgb_ug RGB_COLOR_HSB(0,94,51)  &trans  &trans  &trans
-                                          &trans        &trans        &trans                &trans            &trans             &trans
+&trans          &trans  &trans  &trans     &trans  &trans                 &trans  &trans  &trans  &trans  &trans  &trans
+&caps_word      &trans  &trans  &trans     &trans  &trans                 &trans  &trans  &trans  &trans  &trans  &trans
+&main_password  &trans  &trans  &trans     &trans  &pim447_scroll_move    &trans  &trans  &trans  &trans  &trans  &trans
+                                &mkp LCLK  &trans  &mkp RCLK              &trans  &trans  &trans
             >;
         };
     };
