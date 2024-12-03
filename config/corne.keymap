@@ -62,10 +62,10 @@
 
         layer_3 {
             bindings = <
-&bt BT_CLR  &bt BT_SEL 0    &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &trans            &trans             &trans                          &trans  &trans  &trans
-&caps_word  &main_password  &trans        &trans        &trans        &trans          &ext_power EP_ON  &ext_power EP_OFF  &trans                          &trans  &trans  &trans
-&trans      &trans          &trans        &trans        &trans        &trans          &rgb_ug RGB_TOG   &rgb_ug RGB_EFF    &rgb_ug RGB_COLOR_HSB(0,94,51)  &trans  &trans  &trans
-                                          &trans        &trans        &trans          &trans            &trans             &trans
+&bt BT_CLR  &bt BT_SEL 0    &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4          &trans            &trans             &trans                          &trans  &trans  &trans
+&caps_word  &main_password  &trans        &trans        &trans        &trans                &ext_power EP_ON  &ext_power EP_OFF  &trans                          &trans  &trans  &trans
+&trans      &trans          &trans        &trans        &trans        &pim447_scroll_move   &rgb_ug RGB_TOG   &rgb_ug RGB_EFF    &rgb_ug RGB_COLOR_HSB(0,94,51)  &trans  &trans  &trans
+                                          &trans        &trans        &trans                &trans            &trans             &trans
             >;
         };
     };
