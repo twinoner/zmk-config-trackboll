@@ -88,7 +88,7 @@
 &trans &kp HOME &kp PG_UP &kp PG_DN &kp END &kp K_CMENU			&kp KP_PLUS &kp MINUS &kp EQUAL &kp KP_MULTIPLY &trans &kp BSLH
 					&kp LALT &trans &kp LBKT		&kp RBKT &trans &kp RALT
 			>;
-		}
+		};
 
         media_layer {
 // -----------------------------------------------------------------------------------------
