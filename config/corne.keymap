@@ -25,15 +25,6 @@
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 20    // default: 10
 
 / {
-    macros {
-        main_password: main_password {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp N1 &kp N2 &kp N3 &kp N4 &kp N5 &kp N6>;
-            label = "MAIN_PASSWORD";
-        };
-    };
-
     conditional_layers {
         compatible = "zmk,conditional-layers";
         adjust_layer {
@@ -99,8 +90,19 @@
 			label = "Media";
 			bindings = <
 &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4			&out OUT_TOG &kp C_PREV &kp C_PP &kp C_NEXT &trans &trans
-&trans &kp C_AC_COPY &mkp MB1 &mkp MB3 &mkp MB2 &trans             &trans &trans &trans &trans &trans &trans
-&ext_power EP_OFF &ext_power EP_ON &ext_power EP_TOG &trans &trans &pim447_scroll_move			&trans &msc SCRL_LEFT &msc SCRL_DOWN &msc SCRL_UP &msc SCRL_RIGHT &trans
+&trans &trans &trans &trans &trans &trans             &trans &trans &trans &trans &trans &trans
+&ext_power EP_OFF 
+&ext_power EP_ON 
+&ext_power EP_TOG 
+&trans 
+&trans 
+&pim447_scroll_move			
+&trans 
+&msc SCRL_LEFT 
+&msc SCRL_DOWN 
+&msc SCRL_UP 
+&msc SCRL_RIGHT 
+&trans
 					&kp K_MUTE &trans &kp C_VOL_DN   		&kp C_VOL_UP &trans &trans
             >;
         };
