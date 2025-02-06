@@ -39,9 +39,9 @@
 // | LCTRL |  A  |  O  |  E  |  U  |  I  |    |  D  |  H   |  T   |  N  |  S  |   -   |
 // | SHIFT |  ;  |  Q  |  J  |  K  |  X  |    |  B  |  M   |  W   |  V  |  Z  | SHIFT |
 //                    | GUI | LWR | SPC |   | ENT | RSE  | BKSP |
-			label = "Base";
+			label = "Dvorak";
 			bindings = <
-&pim447_scroll_move   &kp SQT   &kp COMMA  &kp DOT  &kp P  &kp Y 		 &kp F  &kp G     &kp C  &kp R  &kp L  &kp FSLH
+&TAB   &kp SQT   &kp COMMA  &kp DOT  &kp P  &kp Y 		 &kp F  &kp G     &kp C  &kp R  &kp L  &kp FSLH
 &kp LCTRL &kp A     &kp O      &kp E    &kp U  &kp I 		 &kp D  &kp H     &kp T  &kp N  &kp S  &kp MINUS
 &kp LSHFT &kp SEMI  &kp Q      &kp J    &kp K  &kp X 		 &kp B  &kp M &kp W  &kp V  &kp Z  &kp RSHFT
 				&kp LGUI &mo LOWER &kp SPACE        &kp RET &mo RAISE &kp BKSP
@@ -58,7 +58,7 @@
 			bindings = <
 &kp ESC &kp N1 &kp N2 &kp N3 &kp N4 &kp N5              &kp N6 &kp N7 &kp N8 &kp N9 &kp N0 &kp BSPC
 &kp F1 &kp F2 &kp F3 &kp F4 &kp F5 &kp F6               &kp F7 &kp F8 &kp F9 &kp F10 &kp F11 &kp F12
-&trans &trans &trans &trans &trans &trans            &trans &trans &trans &trans &trans &kp PIPE
+&trans &trans &mkp MB1 &mkp MB3 &mkp MB2 &pim447_scroll_move            &trans &trans &trans &trans &trans &kp PIPE
 					&kp LGUI &trans &kp PG_UP      &kp PG_UP &trans &kp DEL
 			>;
 		};
@@ -88,18 +88,7 @@
 			bindings = <
 &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4			&out OUT_TOG &kp C_PREV &kp C_PP &kp C_NEXT &trans &trans
 &trans &trans &trans &trans &trans &trans             &trans &trans &trans &trans &trans &trans
-&ext_power EP_OFF 
-&ext_power EP_ON 
-&ext_power EP_TOG 
-&trans 
-&trans 
-&pim447_scroll_move			
-&trans 
-&trans
-&trans
-&trans
-&trans
-&trans
+&ext_power EP_OFF &ext_power EP_ON &ext_power EP_TOG &trans &trans &trans			 &trans  &trans &trans &trans &trans &trans
 					&kp K_MUTE &trans &kp C_VOL_DN   		&kp C_VOL_UP &trans &trans
             >;
         };
