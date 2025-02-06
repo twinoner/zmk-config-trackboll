@@ -23,7 +23,6 @@
 		compatible = "pimoroni,trackball_pim447";
 		reg = <0xa>;
 		label = "PIM447_TRACKBALL";
-		invert-move-x;
 		power-layer = <0>; /* MOUSE layer */
 		//idle-timeout = <10>; /* in seconds */
 
