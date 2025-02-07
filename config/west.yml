@@ -3,7 +3,7 @@ manifest:
     # - name: zmk_ds87
     #   url-base: https://github.com/daniel2887
     - name: zmk_pim447
-      url-base: https://github.com/cdc-mkb/zmk/tree/
+      url-base: https://github.com/cdc-mkb
   projects:
     # - name: zmk
     #   remote: zmk_ds87
