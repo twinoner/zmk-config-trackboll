@@ -2,10 +2,16 @@ manifest:
   remotes:
     - name: zmk_ds87
       url-base: https://github.com/daniel2887
+    - name: zmkfirmware
+      url-base: https://github.com/zmkfirmware
   projects:
     - name: zmk
       remote: zmk_ds87
       revision: ds87-mouse-pim447
+      import: app/west.yml
+    - name: zmk
+      remote: zmkfirmware
+      revision: main
       import: app/west.yml
   self:
     path: config
