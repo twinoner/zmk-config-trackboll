@@ -1,14 +1,15 @@
 manifest:
   projects:
     - name: zmk_ds87
-      # remote: zmk_ds87
       revision: ds87-mouse-pim447
       import: app/west.yml
       url: https://github.com/daniel2887/zmk
     - name: zmk_main
-      # remote: zmkfirmware
       revision: main
       url: https://github.com/zmkfirmware/zmk
       import: app/west.yml
+    - name: nice-view-gem
+      revision: main
+      url: https://github.com/M165437/nice-view-gem
   self:
     path: config
