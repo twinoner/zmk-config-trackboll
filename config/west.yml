@@ -1,9 +1,4 @@
 manifest:
-  remotes:
-    # - name: zmk_ds87
-    #   url-base: https://github.com/daniel2887
-    # - name: zmkfirmware
-    #   url-base: https://github.com/zmkfirmware
   projects:
     - name: zmk_ds87
       # remote: zmk_ds87
