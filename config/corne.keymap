@@ -35,37 +35,37 @@
 
         default_layer {
             bindings = <
-&kp Q  &kp W  &kp E     &kp R  &kp T        &kp Y    &kp U  &kp I      &kp O    &kp P   
-&kp A  &kp S  &kp D     &kp F  &kp G        &kp H    &kp J  &kp K      &kp L    &kp SEMI
-&kp Z  &kp X  &kp C     &kp V  &kp B        &kp N    &kp M  &kp COMMA  &kp DOT  &kp FSLH
-              &kp LGUI  &mo 1  &kp SPACE    &kp RET  &mo 2  &kp LANG1
+&kp CAPSLOCK  &kp Q  &kp W  &kp E     &kp R  &kp T        &kp Y    &kp U  &kp I      &kp O    &kp P     &kp BSPC
+&kp LSHFT     &kp A  &kp S  &kp D     &kp F  &kp G        &kp H    &kp J  &kp K      &kp L    &kp SEMI  &kp SQT
+&kp LCTRL     &kp Z  &kp X  &kp C     &kp V  &kp B        &kp N    &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp ESC
+                            &kp LGUI  &mo 1  &kp SPACE    &kp RET  &mo 2  &kp LANG1
             >;
         };
 
         lower_layer {
             bindings = <
-&kp F1   &kp F2   &kp F3        &kp F4            &kp F5               &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp SLASH     &kp ASTERISK
-&kp F6   &kp F7   &kp F8        &kp F9            &kp F10              &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp NUMBER_9  &kp MINUS   
-&kp F11  &kp F12  &kp GRAVE     &kp LEFT_BRACKET  &kp RIGHT_BRACKET    &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp DOT       &kp EQUAL    
-                  &kp LEFT_ALT  &trans            &kp BSLH             &kp NUMBER_0  &trans        &kp LANG2
+&kp TAB    &kp F1   &kp F2   &kp F3        &kp F4            &kp F5               &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp SLASH     &kp ASTERISK  &kp BSPC
+&kp LSHFT  &kp F6   &kp F7   &kp F8        &kp F9            &kp F10              &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp NUMBER_9  &kp MINUS     &kp PLUS
+&kp LCTRL  &kp F11  &kp F12  &kp GRAVE     &kp LEFT_BRACKET  &kp RIGHT_BRACKET    &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp DOT       &kp EQUAL     &kp ENTER
+                             &kp LEFT_ALT  &trans            &kp BSLH             &kp NUMBER_0  &trans        &kp LANG2
             >;
         };
 
         raise_layer {
             bindings = <
-&kp UP      &kp C_STOP       &kp PRINTSCREEN  &kp SCROLLLOCK  &kp PAUSE_BREAK    &bt BT_CLR        &bt BT_SEL 0       &bt BT_SEL 1       &bt BT_SEL 2     &bt BT_SEL 3                      
-&kp DOWN    &kp RIGHT        &kp INS          &kp HOME        &kp PG_UP          &ext_power EP_ON  &ext_power EP_OFF  &ext_power EP_TOG  &rgb_ug RGB_HUI  &rgb_ug RGB_COLOR_HSB(66,91,51)   
-&kp K_MUTE  &kp C_VOLUME_UP  &kp DEL          &kp END         &kp PG_DN          &rgb_ug RGB_TOG   &rgb_ug RGB_EFF    &rgb_ug RGB_SPI    &rgb_ug RGB_SPD  &rgb_ug RGB_COLOR_HSB(240,88,49)  
-                             &kp C_PREVIOUS   &trans          &kp C_NEXT         &kp RET           &trans             &kp RALT
+&kp K_PP           &kp UP      &kp C_STOP       &kp PRINTSCREEN  &kp SCROLLLOCK  &kp PAUSE_BREAK    &bt BT_CLR        &bt BT_SEL 0       &bt BT_SEL 1       &bt BT_SEL 2     &bt BT_SEL 3                      &bt BT_SEL 4
+&kp LEFT           &kp DOWN    &kp RIGHT        &kp INS          &kp HOME        &kp PG_UP          &ext_power EP_ON  &ext_power EP_OFF  &ext_power EP_TOG  &rgb_ug RGB_HUI  &rgb_ug RGB_COLOR_HSB(66,91,51)   &rgb_ug RGB_COLOR_HSB(99,91,50)
+&kp C_VOLUME_DOWN  &kp K_MUTE  &kp C_VOLUME_UP  &kp DEL          &kp END         &kp PG_DN          &rgb_ug RGB_TOG   &rgb_ug RGB_EFF    &rgb_ug RGB_SPI    &rgb_ug RGB_SPD  &rgb_ug RGB_COLOR_HSB(240,88,49)  &rgb_ug RGB_COLOR_HSB(0,87,50)
+                                                &kp C_PREVIOUS   &trans          &kp C_NEXT         &kp RET           &trans             &kp RALT
             >;
         };
 
         layer_3 {
             bindings = <
-&trans  &trans  &trans     &trans  &trans                 &trans  &trans  &trans  &trans  &trans  
-&trans  &trans  &trans     &trans  &trans                 &trans  &trans  &trans  &trans  &trans  
-&trans  &trans  &trans     &trans  &pim447_scroll_move    &trans  &trans  &trans  &trans  &trans  
-                &mkp LCLK  &trans  &mkp RCLK              &trans  &trans  &trans
+&trans          &trans  &trans  &trans     &trans  &trans                 &trans  &trans  &trans  &trans  &trans  &trans
+&caps_word      &trans  &trans  &trans     &trans  &trans                 &trans  &trans  &trans  &trans  &trans  &trans
+&main_password  &trans  &trans  &trans     &trans  &pim447_scroll_move    &trans  &trans  &trans  &trans  &trans  &trans
+                                &mkp LCLK  &trans  &mkp RCLK              &trans  &trans  &trans
             >;
         };
     };
