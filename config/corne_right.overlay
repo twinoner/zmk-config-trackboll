@@ -2,7 +2,7 @@
 #include <dt-bindings/zmk/trackball_pim447.h>
 
 &default_transform {
-	col-offset = <6>;
+	col-offset = <5>;
 };
 
 &kscan0 {
