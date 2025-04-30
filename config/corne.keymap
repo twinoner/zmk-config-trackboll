@@ -51,7 +51,7 @@
 &trans               &mkp MB1             &mkp MB2  &mkp MB3   &mkp MB4  &mkp MB5     &mkp LCLK  &pim447_scroll_move  &mkp RCLK  &trans  &trans  &trans
 &pim447_toggle       &pim447_toggle       &trans    &trans     &trans    &trans       &trans     &mkp MCLK            &trans     &trans  &trans  &trans
 &pim447_scroll_move  &pim447_scroll_move  &trans    &trans     &trans    &trans       &trans     &trans               &trans     &trans  &trans  &trans
-                                                    &mkp LCLK &trans     &mkp RCLK    &trans     &trans               &trans
+                                                    &mkp LCLK  &trans    &mkp RCLK    &trans     &trans               &trans
             >;
         };
     };
