@@ -39,7 +39,7 @@
 
         raise_layer {
             bindings = <
-&trans  &kp K_PP        &kp UP_ARROW       &kp PRINTSCREEN  &kp SCROLLLOCK  &kp K_PP          &bt BT_SEL 0       &bt BT_SEL 1    &bt BT_SEL 2     &bt BT_SEL 3  &bt BT_SEL 4   &trans
+&trans  &sys_reset      &kp UP_ARROW       &kp PRINTSCREEN  &kp SCROLLLOCK  &kp K_PP          &bt BT_SEL 0       &bt BT_SEL 1    &bt BT_SEL 2     &bt BT_SEL 3  &bt BT_SEL 4   &trans
 &trans  &kp LEFT_ARROW  &kp DOWN_ARROW     &kp RIGHT_ARROW  &kp K_PREV      &kp K_NEXT        &kp PRINTSCREEN    &kp SCROLLLOCK  &kp PAUSE_BREAK  &bt BT_CLR    &kp PAGE_UP    &trans
 &trans  &kp K_MUTE      &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp END         &kp K_PREVIOUS    &kp INS            &kp HOME        &kp DELETE       &kp END       &kp PAGE_DOWN  &trans
                                            &trans           &trans          &trans            &ext_power EP_OFF  &trans          &out OUT_TOG
