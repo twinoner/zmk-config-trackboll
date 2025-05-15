@@ -20,19 +20,19 @@
 
         default_layer {
             bindings = <
-&kp CAPSLOCK  &mt Q CAPSLOCK    &kp W  &kp E     &kp R   &kp T        &kp Y    &kp U   &kp I          &kp O    &mt P BACKSPACE  &kp BSPC
-&kp LSHFT     &mt A LEFT_SHIFT  &kp S  &kp D     &kp F   &kp G        &kp H    &kp J   &kp K          &kp L    &mt SEMI SQT     &kp SQT
-&kp LCTRL     &mt Z LCTRL       &kp X  &kp C     &kp V   &kp B        &kp N    &kp M   &kp COMMA      &kp DOT  &mt FSLH ESCAPE  &kp ESC
-                                       &kp LGUI  &tog 1  &kp SPACE    &kp RET  &tog 2  &kp RIGHT_ALT
+&trans  &mt Q CAPSLOCK    &kp W  &kp E     &kp R   &kp T        &kp Y    &kp U   &kp I          &kp O    &mt P BACKSPACE  &trans
+&trans  &mt A LEFT_SHIFT  &kp S  &kp D     &kp F   &kp G        &kp H    &kp J   &kp K          &kp L    &mt SEMI SQT     &trans
+&trans  &mt Z LCTRL       &kp X  &kp C     &kp V   &kp B        &kp N    &kp M   &kp COMMA      &kp DOT  &mt FSLH ESCAPE  &trans
+                                 &kp LGUI  &tog 1  &kp SPACE    &kp RET  &tog 2  &kp RIGHT_ALT
             >;
         };
 
         lower_layer {
             bindings = <
-&kp TAB    &kp F1              &kp F2   &kp F3        &kp F4            &kp F5               &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9   &kp SLASH  &kp ASTERISK  &kp BSPC
-&kp LSHFT  &kp F6              &kp F7   &kp F8        &kp F9            &kp F10              &kp NUMBER_4  &kp N5        &kp NUMBER_6   &kp PLUS   &kp MINUS     &kp PLUS
-&kp LCTRL  &mt F11 LEFT_SHIFT  &kp F12  &kp GRAVE     &kp LEFT_BRACKET  &kp RIGHT_BRACKET    &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3   &kp DOT    &kp ENTER     &kp ENTER
-                                        &kp LEFT_ALT  &trans            &kp BSLH             &kp NUMBER_0  &trans        &kp BACKSPACE
+&trans  &kp F1              &kp F2   &kp F3        &kp F4            &kp F5               &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9   &kp SLASH  &kp ASTERISK  &trans
+&trans  &kp F6              &kp F7   &kp F8        &kp F9            &kp F10              &kp NUMBER_4  &kp N5        &kp NUMBER_6   &kp PLUS   &kp MINUS     &trans
+&trans  &mt F11 LEFT_SHIFT  &kp F12  &kp GRAVE     &kp LEFT_BRACKET  &kp RIGHT_BRACKET    &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3   &kp DOT    &kp ENTER     &trans
+                                     &kp LEFT_ALT  &trans            &kp BSLH             &kp NUMBER_0  &trans        &kp BACKSPACE
             >;
         };
 
@@ -41,16 +41,16 @@
 &trans  &kp K_PP        &kp UP_ARROW       &kp PRINTSCREEN  &kp SCROLLLOCK  &kp K_PP          &bt BT_SEL 0       &bt BT_SEL 1    &bt BT_SEL 2     &bt BT_SEL 3  &bt BT_SEL 4   &trans
 &trans  &kp LEFT_ARROW  &kp DOWN_ARROW     &kp RIGHT_ARROW  &kp K_PREV      &kp K_NEXT        &kp PRINTSCREEN    &kp SCROLLLOCK  &kp PAUSE_BREAK  &bt BT_CLR    &kp PAGE_UP    &trans
 &trans  &kp K_MUTE      &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp END         &kp K_PREVIOUS    &kp INS            &kp HOME        &kp DELETE       &kp END       &kp PAGE_DOWN  &trans
-                                           &kp C_PREVIOUS   &trans          &kp C_NEXT        &ext_power EP_OFF  &trans          &out OUT_TOG
+                                           &trans           &trans          &trans            &ext_power EP_OFF  &trans          &out OUT_TOG
             >;
         };
 
         layer_3 {
             bindings = <
-&mkp MB1             &mkp MB2  &mkp MB3  &mkp MB4   &mkp MB5  &trans       &mkp LCLK  &pim447_scroll_move  &mkp RCLK  &trans  &trans  &trans
-&pim447_toggle       &trans    &trans    &trans     &trans    &trans       &trans     &mkp MCLK            &trans     &trans  &trans  &trans
-&pim447_scroll_move  &trans    &trans    &trans     &trans    &trans       &trans     &trans               &trans     &trans  &trans  &trans
-                                         &mkp LCLK  &trans    &mkp RCLK    &trans     &trans               &trans
+&mkp MB1             &mkp MB2  &mkp MB3  &mkp MB4   &mkp MB5  &trans       &mkp LCLK  &pim447_scroll_move  &mkp RCLK  &mkp MB1  &mkp MB2  &trans
+&pim447_toggle       &trans    &trans    &trans     &trans    &trans       &trans     &mkp MCLK            &mkp MB3   &mkp MB4  &mkp MB5  &trans
+&pim447_scroll_move  &trans    &trans    &trans     &trans    &trans       &mkp MCLK  &trans               &trans     &trans    &trans    &trans
+                                         &mkp LCLK  &trans    &mkp RCLK    &mkp LCLK  &trans               &mkp RCLK
             >;
         };
     };
