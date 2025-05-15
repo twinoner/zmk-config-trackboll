@@ -48,10 +48,10 @@
 
         layer_3 {
             bindings = <
-&mkp MB1             &rgb_ug RGB_TOG                 &rgb_ug RGB_HUI                   &rgb_ug RGB_HUD                  &rgb_ug RGB_SAI                   &rgb_ug RGB_SAD                     &mkp LCLK  &pim447_scroll_move  &mkp RCLK  &mkp MB1  &mkp MB2  &trans
-&pim447_toggle       &rgb_ug RGB_BRI                 &rgb_ug RGB_BRD                   &rgb_ug RGB_SPI                  &rgb_ug RGB_SPD                   &rgb_ug RGB_EFF                     &trans     &mkp MCLK            &mkp MB3   &mkp MB4  &mkp MB5  &trans
-&pim447_scroll_move  &rgb_ug RGB_COLOR_HSB(0,93,49)  &rgb_ug RGB_COLOR_HSB(245,91,50)  &rgb_ug RGB_COLOR_HSB(60,97,53)  &rgb_ug RGB_COLOR_HSB(119,92,52)  &rgb_ug RGB_COLOR_HSB(301,88,49)    &mkp MCLK  &trans               &trans     &trans    &trans    &trans
-                                                                                       &mkp LCLK                        &trans                            &mkp RCLK                           &mkp LCLK  &trans               &mkp RCLK
+&trans  &rgb_ug RGB_TOG                 &rgb_ug RGB_HUI                   &rgb_ug RGB_HUD                  &rgb_ug RGB_SAI                   &rgb_ug RGB_SAD                     &mkp LCLK        &pim447_scroll_move  &mkp RCLK  &mkp MB1  &mkp MB2  &trans
+&trans  &rgb_ug RGB_BRI                 &rgb_ug RGB_BRD                   &rgb_ug RGB_SPI                  &rgb_ug RGB_SPD                   &rgb_ug RGB_EFF                     &pim447_toggle   &mkp MCLK            &mkp MB3   &mkp MB4  &mkp MB5  &trans
+&trans  &rgb_ug RGB_COLOR_HSB(0,93,49)  &rgb_ug RGB_COLOR_HSB(245,91,50)  &rgb_ug RGB_COLOR_HSB(60,97,53)  &rgb_ug RGB_COLOR_HSB(119,92,52)  &rgb_ug RGB_COLOR_HSB(301,88,49)    &mkp MCLK        &trans               &trans     &trans    &trans    &trans
+                                                                          &mkp LCLK                        &trans                            &mkp RCLK                           &mkp LCLK        &trans               &mkp RCLK
             >;
         };
     };
