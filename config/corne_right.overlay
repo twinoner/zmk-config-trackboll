@@ -44,3 +44,7 @@
 		poll-interval = <10>;        // Interval in milli-seconds at which the track ball is polled (default: 50)
 	};
 };
+
+&nice_view_spi {
+    cs-gpios = <&pro_micro 0 GPIO_ACTIVE_HIGH>;  // use D0 (008) for CS (no 006)
+};
