@@ -2,15 +2,10 @@ manifest:
   remotes:
     - name: zmk_ds87
       url-base: https://github.com/daniel2887
-    - name: kevinpastor
-      url-base: https://github.com/kevinpastor
   projects:
     - name: zmk
       remote: zmk_ds87
       revision: ds87-mouse-pim447
       import: app/west.yml
-    - name: nice-view-elemental
-      remote: kevinpastor
-      revision: main
   self:
     path: config
